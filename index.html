@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>State Tuned</title>
+
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1" />
+<!--	<link rel="stylesheet" href="css/jquery.mobile.theme-1.3.0.min.css" />-->
+	<!--<script src="http://debug.phonegap.com/target/target-script-min.js#StateTuned"></script>-->	
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.0.min.css" />	
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.mobile-1.3.0.min.js"></script>
+
+	<!-- Scripts for Phonegap Build plugin injection -->
+	<script src="phonegap.js"></script>
+	<script src="childbrowser.js"></script>
+	<script src="barcodescanner.js"></script>
+
+	<script src="js/js.js"></script>
+	<script src="js/database.js"></script>
+	
+	<link rel="stylesheet" href="css/portrait.css" media="(orientation: portrait)"/>
+	<link rel="stylesheet" href="css/landscape.css" media="(orientation: landscape)"/>
+</head>
+<body>
+
+	<!-- Page: home -->
+
+	<div id="home"
+		data-role="page"
+		data-title="State Tuned: Home">
+		<div class="header">
+		</div>
+		<div class="map">
+        	<img src="images/us-map.png" alt="US map">
+		</div>
+        <div class="scanContainer">
+			<div class="scanButton">SCAN</div>
+        </div>
+        <div class="navContainer">
+        	<div class="nav">
+                <a class="about navButton" href="#aboutPage">ABOUT US</a>
+                <a class="facebook navButton" href="#facebook">facebook</a>
+        	</div>
+        </div>
+        <div class="footer">
+		</div>
+    </div>
+
+	<!-- Page: second screen State Page -->
+	<div id="second"
+		data-role="page"
+		data-title="StateTuned: State Screen">
+		<div data-role="header"
+			data-position="fixed">	
+		</div>
+		<div data-role="content">
+			<h1 id="statename"></h1>	
+			<img id="statepic" alt="State Artwork">
+            <ul id="statesongs"></ul>
+
+			<div data-role="footer">
+				<a class="scanButton" data-role="button">Scan</a>
+				<a class="aboutButton" data-role="button">About</a>
+				<a class="FBButton" data-role="button">FB</a>
+
+            </div>
+		</div>
+	</div>
+	<!-- Dialog Content -->
+	
+	<div data-role="page"
+		id="aboutPage"
+		data-title="StateTuned: About">
+		<div data-role="header"
+			data-position="fixed">
+            <a href="#" 
+        	data-icon="back" 
+            data-iconpos="notext"
+            data-rel="back"
+            class="ui-btn-right" 
+            >Back</a>   
+		</div>
+		<div data-role="content">
+        	<h2>About Us </h2>          
+        	<p>As part of <a class="blue" href="http://www.cascadia.edu/">Cascadia’s</a> Integrative Relay Project connected to the Maps Annual Integrated Learning Theme, over 275 students took up parts of the question of state songs, building upon each other’s work, passing different parts of the project from quarter to quarter, through 10 classes, and culminating in the State Tuned Phone App and Mixed Media Installation. </p>
+            <p>The State Tuned mobile App provides the ability to listen to state songs, upload photos to facebook, geolocate your state, vote for a state song and like the overall application.</p>
+            <p> We encourage you to also visit the <a class="blue" href="http://statetuned.cascadia.edu/">State Tuned</a> website.</p>
+            <h2>Credits </h2>
+            <ul> 
+            	<li>Art         - Spring QTR 2013 </li>
+                <li>English     - Fall QTR 2012 </li>
+                <li>Humanities  - Fall QTR 2012 </li>
+                <li>Mobile App  - Spring QTR 2013 </li>
+                <li>Networking  - Spring QTR 2013 </li>
+                <li>College 101 (2 sections)  - Fall 2012</li>
+                <li>History 150 - Fall 2012</li>
+            </ul>
+            <br/>
+            <br/>
+           
+                <div class="scanContainer">
+                    <div class="scanButton">Scan </div>
+                </div>
+                    <!--<a class="scanButton" data-role="button">Scan Again</a>-->
+                <div class="navContainer">   
+                    <a class="facebook navButton" href="#facebook">facebook</a>	
+                </div>
+         
+		</div>
+        <div data-role="footer" data-position="fixed">      	
+              <!--<a class="facebook footerButton" href="#facebook">facebook</a> -->  
+              <!--<a href="#" data-role="button" data-inline="true" data-rel="back" class="footerButton">back</a>-->	 
+		</div>
+
+	</div>
+	
+	
+	
+</body>
+</html>

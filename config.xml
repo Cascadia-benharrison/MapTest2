@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.Cascadia.MapTest2"
+        versionCode="1" 
+        version   = "1.0.0">    
+
+    <gap:plugin name="BarcodeScanner" /> <!-- latest release -->
+    <gap:plugin name="ChildBrowser" /> <!-- latest release -->
+
+    <!-- versionCode is optional and Android only -->
+
+    <!-- <icon src="images/logo.png" /> -->
+    
+    <name>Map Test 2</name>
+
+    <description>
+        Testing for map functionality in State Tuned app (Cascadia Community College).
+    </description>
+
+    <author href="http://cascadia.edu" email="brianb@cascadia.edu">
+        State Tuned Team
+    </author>
+    
+    <preference name="phonegap-version" value="2.7.0" />
+
+</widget>
