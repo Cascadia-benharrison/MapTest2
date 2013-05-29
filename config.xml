@@ -7,6 +7,9 @@
 
     <gap:plugin name="BarcodeScanner" /> <!-- latest release -->
     <gap:plugin name="ChildBrowser" /> <!-- latest release -->
+    
+    <!-- Features -->
+    <feature name="http://api.phonegap.com/1.0/camera"/> <!-- camera -->
 
     <!-- versionCode is optional and Android only -->
 
